@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elektrik Tüketim Hesaplayıcı</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Elektrik Tüketim Hesaplayıcı</h1>
+        <div class="form-group">
+            <label for="watt">Cihazın Watt Gücü (Watt):</label>
+            <input type="number" id="watt" placeholder="Örneğin: 400" required>
+        </div>
+        <div class="form-group">
+            <label for="hours">Günlük Kullanım Süresi (Saat):</label>
+            <input type="number" id="hours" placeholder="Örneğin: 4" required>
+        </div>
+        <div class="form-group">
+            <label for="price">Elektrik Birim Fiyatı (kWh başına TL):</label>
+            <input type="number" id="price" placeholder="Örneğin: 1.5" step="0.01" required>
+        </div>
+        <button onclick="calculateCost()">Hesapla</button>
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

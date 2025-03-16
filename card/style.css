@@ -1,0 +1,100 @@
+/* Color */
+:root {
+--primary-color: #793ec8;
+--secondary-color:rgb(29, 29, 29);
+}
+
+/* Outfit Font Family*/
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Outfit',sans-serif;
+}
+
+.card-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.cards {
+    width: 370px;
+    border: 2px solid var(--secondary-color);
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 5px 5px var(--secondary-color);
+}
+
+.card-banner, img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.learning {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    color: white;
+    text-align: center;
+    font-size: .9rem;
+    margin-top: 1rem;
+    margin-left: .2rem;
+    border-radius: 4px;
+    padding: .2rem 1rem;
+}
+
+
+/* Titles */
+
+.h2-title {
+    font-weight: 500;
+    margin-left: .2rem;
+    margin-top: .7rem;
+    font-size: .8rem;
+    color: rgb(48, 48, 48);
+}
+
+.h1-title {
+    font-weight: bold;
+    margin-left: .2rem;
+    margin-top: .7rem;
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+}
+
+.p-title {
+    width: 90%;
+    font-weight: 400;
+    margin-left: .2rem;
+    margin-top: .7rem;
+    font-size: .95rem;
+    color: rgb(139, 139, 139);
+}
+
+/* Profile */
+
+.profile {
+    display: flex;
+    align-items:center;
+    margin-top: 1.5rem;
+}
+
+.profile .cv {
+    width: 10%;
+    margin-left: .1rem;
+    margin-right: 8px;
+}
+
+.profile, .h3-title {
+    font-size: .8rem;
+}

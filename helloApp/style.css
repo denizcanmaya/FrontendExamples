@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.helloApp { 
+    width: 350px;
+    background: rgb(128, 128, 128);
+    padding: 2rem;
+    border-radius: 6px;
+
+}
+
+label {
+    color: #fff;
+}
+
+input {
+    margin-top: .4rem;
+    padding: .3rem;
+    border: 2px solid #fff;
+    border-radius: 6px;
+    background: none;
+    color: #fff;
+    width: 100%;
+}
+
+input:focus {
+    outline: none;
+}
+
+button {
+    padding: .5rem;
+    background: #fff;
+    border: 2px solid #fff;
+    border-radius: 6px;
+    margin-top: .4rem;
+    width: 100%;
+}
+
+button:hover {
+    transition: .25s ease;
+    background: none;
+    color: #fff;
+}
+
+#helloMessage {
+    color: #fff;
+    font-size: 16px;
+    margin-top: 0.6rem;
+}

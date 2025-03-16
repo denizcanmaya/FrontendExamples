@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.form {
+    max-width: 30rem;
+    width: 100%;
+    background: #fff;
+    border-radius: 10px;
+}
+
+
+input, textarea {
+    outline: none;
+    background: none;
+    border-bottom: 1px solid #3E6097;
+}
+
+
+.button {
+    background-color: #3E6097;
+    color: white;
+    width: 100%;
+}
+
+.button:hover {
+    opacity: 0.8;
+    transition: .3s all;
+}
+
+.submitAlert {
+    border: 2px solid #3E6097;
+    display: none;
+}

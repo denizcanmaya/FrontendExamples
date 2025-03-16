@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Su Tüketimi Hesaplayıcı</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form-group">
+            <label for="litre">Kaç Litre Kullanıldı:</label>
+            <input type="number" id="litre" placeholder="Örneğin: 10">
+        </div>
+
+        <div class="form-group">
+            <label for="dakika">Açık Kalma Süresi:</label>
+            <input type="number" placeholder="Örneğin: 5" id="dakika">
+        </div>
+
+        <div class="form-group">
+            <label for="birimfiyat">Birim Su Fiyatı:</label>
+            <input type="number" placeholder="Örneğin: 0,015₺" id="birimFiyat">
+        </div>
+        
+        <button class="sthButton" onclick="suTuketimi()">Hesapla</button>
+
+        <div id="fiyat"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
