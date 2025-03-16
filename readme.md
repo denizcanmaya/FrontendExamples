@@ -15,5 +15,5 @@ Bu projeleri incelemek için aşağıdaki adımları izleyebilirsiniz:
 
 Bu projeleri indirmek için aşağıdaki yöntemlerden birini kullanabilirsiniz:
 
-*   Bu GitHub deposunu klonlayın: `git clone https://github.com/denizcanmaya/frontend-examples.git`
+*   Bu GitHub deposunu klonlayın: `https://github.com/denizcanmaya/FrontendExamples.git`
 *   GitHub arayüzünden projeleri ZIP dosyası olarak indirin.
