@@ -1,0 +1,89 @@
+* {
+    margin:0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    font-family: sans-serif;
+    background: url(background.jpg) no-repeat;
+    background-position:center;
+    background-size:auto;
+}
+
+h1 {
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    color: #fff;
+    margin-bottom: .5rem;
+}
+
+.clock {
+    display: flex;
+}
+
+.clock > .time {
+    margin: 5px;
+}
+
+.clock span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 90px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,.3);
+    width: 170px;
+    height: 100px;
+    background-color: #11292B;
+    opacity: .7;
+    color: #fff;
+    padding: .2rem;
+}
+.clock .text {
+    height: 50px;
+    font-size: 15px;
+    font-weight:500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: #31616D;
+    opacity: .7;
+}
+
+.ampm {
+    display: flex;
+    align-items: end;
+}
+
+.ampm span {
+    width: 80px;
+    height: 50px;
+    font-size: 35px;
+}
+
+@media screen and (max-width: 600px) {
+    .clock span {
+    font-size: 35px;
+    width: 80px;
+    height: 40px;
+    }
+    .clock .text {
+        height: 30px;
+        font-size: 10px;
+    }
+    .ampm span {
+        width: 50px;
+        height: 30px;
+        font-size: 20px;
+    }
+    h1 {
+        font-size: 14px;
+    }
+}
