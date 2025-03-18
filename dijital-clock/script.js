@@ -14,7 +14,7 @@ setInterval(timeUpdate,1000);
 function timeUpdate() {
     const date = new Date();
     hour.innerText = date.getHours() < 10 ? "0" + date.getHours() : date.getHours();
-    minutes.innerText = date.getMinutes();
+    minutes.innerText =date.getMinutes() < 10 ? "0" + date.getMinutes() : date.getMinutes();
     seconds.innerText = date.getSeconds() < 10 ? "0" + date.getSeconds() : date.getSeconds();
     amPm.innerText = date.getHours() >= 12 ? 'PM' : 'AM';
 };
