@@ -11,19 +11,9 @@ body {
     flex-direction: column;
     height: 100vh;
     font-family: sans-serif;
-    background: url(background.jpg) no-repeat;
+    background: url(assets/background.jpg) no-repeat;
     background-position:center;
     background-size:auto;
-}
-
-h1 {
-    text-transform: uppercase;
-    letter-spacing: 6px;
-    font-size: 30px;
-    font-weight: 400;
-    text-align: center;
-    color: #fff;
-    margin-bottom: .5rem;
 }
 
 .clock {
@@ -38,18 +28,20 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 90px;
+    font-size: 130px;
+    font-weight: 600;
     text-shadow: 2px 2px 4px rgba(0,0,0,.3);
-    width: 170px;
-    height: 100px;
+    width: 250px;
+    height: 200px;
     background-color: #11292B;
     opacity: .7;
     color: #fff;
     padding: .2rem;
 }
+
 .clock .text {
     height: 50px;
-    font-size: 15px;
+    font-size: 20px;
     font-weight:500;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -63,16 +55,45 @@ h1 {
 }
 
 .ampm span {
-    width: 80px;
-    height: 50px;
-    font-size: 35px;
+    width: 120px;
+    height: 80px;
+    font-size: 50px;
+    font-weight: 500;
 }
+
+.background {
+    position: absolute;
+    top: 10px; 
+    right: 20px;
+    display: flex;
+    flex-direction: row; 
+    gap: 4px;
+}
+
+.backgroundEl {
+    background-color: #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 0;
+}
+
+.white, .blue, .red {
+    transition: .3s;
+}
+
+.white:hover, .blue:hover,
+.red:hover  {
+    background-color: rgb(17, 95, 184);
+    cursor: pointer;
+}
+
 
 @media screen and (max-width: 600px) {
     .clock span {
     font-size: 35px;
     width: 80px;
-    height: 40px;
+    height: 60px;
     }
     .clock .text {
         height: 30px;
@@ -80,10 +101,34 @@ h1 {
     }
     .ampm span {
         width: 50px;
-        height: 30px;
+        height: 40px;
         font-size: 20px;
     }
-    h1 {
-        font-size: 14px;
+    .backgroundEl {
+        width: 20px;
+        height: 20px;
     }
+
+}
+
+@media (min-width: 600px) and (max-width:850px) {
+    .clock span {
+    font-size: 90px;
+    width: 180px;
+    height: 140px;
+    }
+    .clock .text {
+        height: 60px;
+        font-size: 20px;
+    }
+    .ampm span {
+        width: 85px;
+        height: 80px;
+        font-size: 35px;
+    }
+    .backgroundEl {
+        width: 35px;
+        height: 35px;
+    }
+
 }
